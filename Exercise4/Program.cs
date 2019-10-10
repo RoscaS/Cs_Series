@@ -8,17 +8,17 @@ namespace Exercise4
     {
         static IEnumerable<int>[] PairImpair(int[] values) {
             return new[] {
-                values.Where(i => i % 2 == 1), 
+                values.Where(i => i % 2 == 1),
                 values.Where(i => i % 2 == 0)
             };
         }
 
         static void Main(string[] args) {
             const int COUNT = 20;
-            
+
             var values = new int[COUNT];
             var rnd = new Random();
-            
+
             for (int i = 0; i < COUNT; i++) {
                 values[i] = rnd.Next(1, 99);
             }
